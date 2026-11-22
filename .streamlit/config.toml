@@ -1,0 +1,80 @@
+# PRD Platform — white-label theme
+# Pure white surfaces, hairline borders, minimal color
+
+[theme]
+primaryColor = "#4F46E5"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#111827"
+borderColor = "#eceef2"
+
+# Typography
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+codeFontSize = "0.875rem"
+codeTextColor = "#111827"
+codeBackgroundColor = "#fafbfc"
+baseFontSize = 14
+baseFontWeight = 400
+headingFontSizes = ["30px", "23px", "19px", "16px", "14px", "12px"]
+headingFontWeights = [600, 600, 600, 500, 500, 500]
+linkUnderline = false
+
+# Semantic colors for status badges (only used by badges)
+redColor = "#dc2626"
+orangeColor = "#d97706"
+yellowColor = "#ca8a04"
+greenColor = "#059669"
+blueColor = "#2563eb"
+violetColor = "#7c3aed"
+grayColor = "#6b7280"
+
+# Categorical colors for data
+chartCategoricalColors = ["#4f46e5", "#059669", "#d97706", "#7c3aed", "#dc2626", "#ca8a04", "#2563eb"]
+chartSequentialColors = ["#eef2ff", "#e0e7ff", "#c7d2fe", "#a5b4fc", "#818cf8", "#6366f1", "#4f46e5", "#4338ca", "#3730a3", "#312e81"]
+
+# Dataframe styling
+dataframeBorderColor = "#eceef2"
+dataframeHeaderBackgroundColor = "#ffffff"
+
+# Borders and radius
+baseRadius = "10px"
+buttonRadius = "10px"
+showWidgetBorder = true
+showSidebarBorder = true
+
+# Sidebar: same white surface, no tint
+[theme.sidebar]
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#111827"
+borderColor = "#eceef2"
+primaryColor = "#4F46E5"
+
+[theme.light]
+primaryColor = "#4F46E5"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#111827"
+borderColor = "#eceef2"
+
+[theme.light.sidebar]
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#111827"
+borderColor = "#eceef2"
+primaryColor = "#4F46E5"
+
+[theme.dark]
+primaryColor = "#818cf8"
+backgroundColor = "#0b1020"
+secondaryBackgroundColor = "#141a2e"
+textColor = "#e5e7eb"
+borderColor = "#27304a"
+
+[theme.dark.sidebar]
+backgroundColor = "#0b1020"
+secondaryBackgroundColor = "#141a2e"
+textColor = "#e5e7eb"
+borderColor = "#27304a"
+primaryColor = "#818cf8"
