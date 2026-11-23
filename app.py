@@ -16,7 +16,11 @@ st.set_page_config(
     layout="wide",
 )
 
-st.logo(str(Path(__file__).parent / "assets" / "logo.png"), size="large")
+logo_path = Path(__file__).parent / "assets" / "logo.png"
+if logo_path.exists():
+    st.logo(str(logo_path), size="large")
+else:
+    st.sidebar.title("PRD Platform")
 
 # ── Sample product database ──────────────────────────────────────────────────
 PRODUCT_DATABASE = {
@@ -75,8 +79,8 @@ NAV_ITEMS = [
 ]
 
 with st.sidebar:
-    st.title("PRD Platform")
-
+    # Title handled by logo logic or sidebar fallback
+    st.space("small")
     for view_id, icon, label in NAV_ITEMS:
         if st.button(label, key=f"nav_{view_id}", icon=icon, width="stretch"):
             st.session_state.current_view = view_id
